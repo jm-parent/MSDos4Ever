@@ -5,13 +5,6 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSDos4Ever", "MSDos4Ever\MSDos4Ever.csproj", "{1A3A41FC-E50A-40B7-9434-68919B2E78E1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SnpptsImages", "SnpptsImages", "{23812782-2138-4E93-B61D-266EE24A8DE8}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\Users\jeanmarie.parent\Downloads\msdos_ios_landscape.png = ..\..\Users\jeanmarie.parent\Downloads\msdos_ios_landscape.png
-		..\..\Users\jeanmarie.parent\Downloads\msdos_ios_portrait.png = ..\..\Users\jeanmarie.parent\Downloads\msdos_ios_portrait.png
-		..\..\Users\jeanmarie.parent\Downloads\msdos_windows.png = ..\..\Users\jeanmarie.parent\Downloads\msdos_windows.png
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
