@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MSDos4Ever.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Shell.NavBarIsVisible="False">
+    <Grid BackgroundColor="#0000b0" RowDefinitions="auto,*">
+        <!--  MenuBar  -->
+        <StackLayout
+            Grid.Row="0"
+            BackgroundColor="#a8a8a8"
+            Orientation="Horizontal">
+            <BoxView WidthRequest="20" Color="#a8a8a8" />
+            <Label
+                Margin="20,2,10,2"
+                FontFamily="MSDOS"
+                FontSize="16"
+                HorizontalOptions="Center"
+                Style="{StaticResource WindowsMenuLabel}"
+                Text="File"
+                VerticalOptions="Center" />
+            <Label
+                Margin="10,2"
+                FontFamily="MSDOS"
+                FontSize="16"
+                HorizontalOptions="Center"
+                Style="{StaticResource WindowsMenuLabel}"
+                Text="Edit"
+                VerticalOptions="Center" />
+            <Label
+                Margin="10,2"
+                FontFamily="MSDOS"
+                FontSize="16"
+                HorizontalOptions="Center"
+                Style="{StaticResource WindowsMenuLabel}"
+                Text="Search"
+                VerticalOptions="Center" />
+            <Label
+                Margin="10,2"
+                FontFamily="MSDOS"
+                FontSize="16"
+                HorizontalOptions="Center"
+                Style="{StaticResource WindowsMenuLabel}"
+                Text="Options"
+                VerticalOptions="Center" />
+            <Label
+                Margin="10,2"
+                FontFamily="MSDOS"
+                FontSize="16"
+                HorizontalOptions="EndAndExpand"
+                Style="{StaticResource WindowsMenuLabel}"
+                Text="Help"
+                VerticalOptions="Center" />
+            <BoxView WidthRequest="20" Color="#a8a8a8" />
+        </StackLayout>
+        <!--  Content  -->
+        <Frame
+            Grid.Row="1"
+            Margin="5,10"
+            BackgroundColor="Transparent"
+            BorderColor="#a8a8a8"
+            CornerRadius="0"
+            HasShadow="False" />
+        <Frame
+            Grid.Row="1"
+            Margin="50"
+            BackgroundColor="Black"
+            BorderColor="Black"
+            HasShadow="False"
+            HeightRequest="{OnPlatform UWP=480}"
+            TranslationX="0"
+            TranslationY="10"
+            WidthRequest="{OnPlatform UWP=641}" />
+        <Frame
+            Grid.Row="1"
+            Margin="50"
+            Padding="0"
+            BackgroundColor="#a8a8a8"
+            HasShadow="False"
+            HeightRequest="{OnPlatform UWP=480}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="{OnPlatform UWP=641}">
+            <Frame
+                Grid.Row="1"
+                Margin="5,10"
+                BackgroundColor="Transparent"
+                BorderColor="#000000"
+                CornerRadius="0"
+                HasShadow="False">
+                <Grid RowDefinitions="*,*,*,*">
+
+                    <Label
+                        Grid.Row="0"
+                        Margin="10,2"
+                        FontFamily="MSDOS"
+                        FontSize="16"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource WindowsMenuLabel}"
+                        Text="Welcome to the MAUI MS-DOS Editor"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Row="1"
+                        Margin="10,2"
+                        FontFamily="MSDOS"
+                        FontSize="16"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource WindowsMenuLabel}"
+                        Text="No Copyright Jean-Marie PARENT Corp., 1987-2022." />
+                    <Label
+                        Grid.Row="2"
+                        Margin="10,2"
+                        FontFamily="MSDOS"
+                        FontSize="16"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource WindowsMenuLabel}"
+                        Text="No rights reserved." />
+                    <FlexLayout
+                        Grid.Row="3"
+                        Direction="Column"
+                        JustifyContent="SpaceAround">
+                        <Label
+                            Grid.Row="2"
+                            Margin="10,2"
+                            FontFamily="MSDOS"
+                            FontSize="16"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            Style="{StaticResource WindowsMenuLabel}"
+                            Text="&lt; Press Enter to see the Survival Guide &gt;" />
+                        <BoxView
+                            Margin="0"
+                            BackgroundColor="Black"
+                            HeightRequest="1"
+                            Color="Black" />
+                        <Label
+                            Margin="10,2"
+                            FontFamily="MSDOS"
+                            FontSize="16"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            Style="{StaticResource WindowsMenuLabel}"
+                            Text="&lt; Press ESC to clear this dialog box &gt;" />
+                    </FlexLayout>
+
+                </Grid>
+
+            </Frame>
+        </Frame>
+
+        <Label
+            Grid.Row="1"
+            Padding="5,1"
+            BackgroundColor="#a8a8a8"
+            FontFamily="MSDOS"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="SNPPTS Challenge"
+            TextColor="#0000b0"
+            VerticalOptions="Start" />
+
+        <Grid
+            Grid.Row="1"
+            Padding="0"
+            BackgroundColor="#05a8a9"
+            VerticalOptions="End">
+            <FlexLayout
+                AlignItems="End"
+                JustifyContent="SpaceAround"
+                Wrap="Wrap">
+                <Label
+                    Margin="0"
+                    FontFamily="MSDOS"
+                    FontSize="16"
+                    Style="{StaticResource WindowsMenuLabel}"
+                    Text="F1=Help"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Label
+                    Margin="0"
+                    FontFamily="MSDOS"
+                    FontSize="16"
+                    Style="{StaticResource WindowsMenuLabel}"
+                    Text="Enter=Execute"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Label
+                    Margin="0"
+                    FontFamily="MSDOS"
+                    FontSize="16"
+                    Style="{StaticResource WindowsMenuLabel}"
+                    Text="Esc=Cancel"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Label
+                    Margin="0"
+                    FontFamily="MSDOS"
+                    FontSize="16"
+                    Style="{StaticResource WindowsMenuLabel}"
+                    Text="Tab=Next Field"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Label
+                    Margin="0"
+                    FontFamily="MSDOS"
+                    FontSize="16"
+                    Style="{StaticResource WindowsMenuLabel}"
+                    Text="Arrow=Next Item"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+
+
+            </FlexLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>
